@@ -65,7 +65,7 @@ export default function Navigation() {
                         </button>
                         <button
                             onClick={() => scrollToSection("contact")}
-                            className="bg-luxury-gold text-luxury-navy px-6 py-2.5 rounded-md hover:bg-luxury-lightGold transition-all duration-200 font-semibold shadow-lg"
+                            className="bg-luxury-gold/15 text-luxury-gold border border-luxury-gold/50 px-6 py-2.5 rounded-md hover:bg-luxury-gold hover:text-luxury-navy transition-all duration-300 font-semibold backdrop-blur-sm"
                         >
                             Contact
                         </button>
@@ -105,7 +105,7 @@ export default function Navigation() {
                         </button>
                         <button
                             onClick={() => scrollToSection("contact")}
-                            className="bg-luxury-gold text-luxury-navy px-8 py-2.5 rounded-md hover:bg-luxury-lightGold transition-all duration-200 font-semibold mt-2 mx-auto block"
+                            className="bg-luxury-gold/15 text-luxury-gold border border-luxury-gold/50 px-8 py-2.5 rounded-md hover:bg-luxury-gold hover:text-luxury-navy transition-all duration-300 font-semibold mt-2 mx-auto block backdrop-blur-sm"
                         >
                             Contact
                         </button>

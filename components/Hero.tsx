@@ -86,7 +86,7 @@ export default function Hero() {
                     {/* CTA Button */}
                     <motion.button
                         onClick={scrollToAbout}
-                        className="bg-luxury-gold text-luxury-navy px-10 py-4 rounded-lg text-lg font-bold hover:bg-luxury-lightGold transition-all duration-300 shadow-2xl hover:shadow-luxury-gold/50 hover:scale-105"
+                        className="bg-luxury-gold/15 text-luxury-gold border border-luxury-gold/50 px-10 py-4 rounded-lg text-lg font-bold hover:bg-luxury-gold hover:text-luxury-navy transition-all duration-300 backdrop-blur-sm"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                     >
