@@ -69,13 +69,6 @@ export default function Footer() {
                             </p>
                         </div>
                     </div>
-
-                    {/* Certifications/Logos could go here */}
-                    <div className="pt-4 opacity-50 flex items-center justify-center space-x-8">
-                        {/* Placeholder for Equal Housing / Realtor logos if needed */}
-                        <div className="w-10 h-10 border border-luxury-cream/20 rounded flex items-center justify-center text-[10px]">REALTOR®</div>
-                        <div className="w-10 h-10 border border-luxury-cream/20 rounded flex items-center justify-center text-[10px] text-center px-1">EQUAL HOUSING</div>
-                    </div>
                 </div>
             </div>
         </footer>
