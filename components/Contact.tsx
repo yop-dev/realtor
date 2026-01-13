@@ -176,7 +176,7 @@ export default function Contact() {
                             <div className="flex flex-col items-center gap-4">
                                 <button
                                     type="submit"
-                                    className="bg-luxury-gold text-luxury-navy px-12 py-4 rounded-lg text-lg font-bold hover:bg-luxury-lightGold transition-all duration-300 shadow-2xl hover:shadow-luxury-gold/50 hover:scale-105"
+                                    className="bg-luxury-gold/15 text-luxury-gold border border-luxury-gold/50 px-12 py-4 rounded-lg text-lg font-bold hover:bg-luxury-gold hover:text-luxury-navy transition-all duration-300 backdrop-blur-sm"
                                 >
                                     SEND
                                 </button>

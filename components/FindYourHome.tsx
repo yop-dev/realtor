@@ -174,7 +174,7 @@ export default function FindYourHome() {
                         <div className="text-center pt-2">
                             <button
                                 type="submit"
-                                className="w-full sm:w-auto bg-luxury-gold text-luxury-navy px-8 md:px-12 py-3 md:py-4 rounded-lg text-base md:text-lg font-bold hover:bg-luxury-lightGold transition-all duration-300 shadow-2xl hover:shadow-luxury-gold/50 hover:scale-105 inline-flex items-center justify-center gap-2"
+                                className="w-full sm:w-auto bg-luxury-gold/15 text-luxury-gold border border-luxury-gold/50 px-8 md:px-12 py-3 md:py-4 rounded-lg text-base md:text-lg font-bold hover:bg-luxury-gold hover:text-luxury-navy transition-all duration-300 backdrop-blur-sm inline-flex items-center justify-center gap-2"
                             >
                                 <Search size={20} className="md:w-6 md:h-6" />
                                 SEARCH NOW
