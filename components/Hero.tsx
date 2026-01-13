@@ -45,16 +45,22 @@ export default function Hero() {
                     transition={{ duration: 0.8, delay: 0.2 }}
                     className="mb-8"
                 >
-                    {/* Portrait in Glassmorphic Card */}
-                    <div className="inline-block glass-dark rounded-2xl p-6 mb-6">
-                        <Image
-                            src="/assets/portrait.jpg"
-                            alt="Marci J Metzger - Professional Portrait"
-                            width={200}
-                            height={200}
-                            className="rounded-full border-4 border-luxury-gold shadow-2xl mx-auto"
-                            priority
-                        />
+                    {/* Portrait with Enhanced Circular Styling */}
+                    <div className="relative inline-block mb-6">
+                        {/* Outer glow ring */}
+                        <div className="absolute inset-0 rounded-full bg-luxury-gold/20 blur-2xl scale-110"></div>
+
+                        {/* Portrait */}
+                        <div className="relative">
+                            <Image
+                                src="/assets/portrait.jpg"
+                                alt="Marci J Metzger - Professional Portrait"
+                                width={220}
+                                height={220}
+                                className="rounded-full border-8 border-luxury-gold shadow-2xl mx-auto ring-4 ring-luxury-gold/30 ring-offset-4 ring-offset-luxury-navy"
+                                priority
+                            />
+                        </div>
                     </div>
 
                     {/* Main Heading */}
