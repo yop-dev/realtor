@@ -24,16 +24,17 @@ export default function Hero() {
             id="hero"
             className="relative h-screen flex items-center justify-center overflow-hidden"
         >
-            {/* Background Image with Overlay */}
+            {/* Background Video with Overlay */}
             <div className="absolute inset-0 z-0">
-                <Image
-                    src="/assets/hero-luxury-home.jpg"
-                    alt="Luxury Home"
-                    fill
-                    className="object-cover"
-                    priority
-                    quality={90}
-                />
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="absolute inset-0 w-full h-full object-cover"
+                >
+                    <source src="/assets/videos/hero-video.mp4" type="video/mp4" />
+                </video>
                 <div className="absolute inset-0 bg-gradient-to-b from-luxury-navy/70 via-luxury-navy/50 to-luxury-navy/70"></div>
             </div>
 
@@ -45,22 +46,16 @@ export default function Hero() {
                     transition={{ duration: 0.8, delay: 0.2 }}
                     className="mb-8"
                 >
-                    {/* Portrait with Enhanced Circular Styling */}
-                    <div className="relative inline-block mb-6">
-                        {/* Outer glow ring */}
-                        <div className="absolute inset-0 rounded-full bg-luxury-gold/20 blur-2xl scale-110"></div>
-
-                        {/* Portrait */}
-                        <div className="relative">
-                            <Image
-                                src="/assets/portrait.jpg"
-                                alt="Marci J Metzger - Professional Portrait"
-                                width={220}
-                                height={220}
-                                className="rounded-full border-8 border-luxury-gold shadow-2xl mx-auto ring-4 ring-luxury-gold/30 ring-offset-4 ring-offset-luxury-navy"
-                                priority
-                            />
-                        </div>
+                    {/* Portrait - Clean & Minimalist */}
+                    <div className="inline-block mb-6">
+                        <Image
+                            src="/assets/portrait.jpg"
+                            alt="Marci J Metzger - Professional Portrait"
+                            width={200}
+                            height={200}
+                            className="rounded-full border-4 border-luxury-gold shadow-xl mx-auto"
+                            priority
+                        />
                     </div>
 
                     {/* Main Heading */}
@@ -72,9 +67,17 @@ export default function Hero() {
                         The Ridge Realty Group
                     </p>
 
-                    <p className="text-2xl sm:text-3xl md:text-4xl text-luxury-cream font-bold mb-8 tracking-wide">
+                    <p className="text-2xl sm:text-3xl md:text-4xl text-luxury-cream font-bold mb-4 tracking-wide">
                         REALTOR FOR NEARLY 3 DECADES!
                     </p>
+
+                    {/* Phone Number */}
+                    <a
+                        href="tel:+12069196886"
+                        className="inline-block text-2xl sm:text-3xl md:text-4xl text-luxury-gold font-bold mb-8 tracking-wider hover:text-luxury-lightGold transition-colors duration-300"
+                    >
+                        206-919-6886
+                    </a>
 
                     <p className="text-lg sm:text-xl text-luxury-cream/90 max-w-2xl mx-auto mb-10 leading-relaxed">
                         Specializing in Southern Nevada Real Estate | Pahrump & Mountain Falls Expert

@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { Search } from "lucide-react";
 
@@ -42,15 +41,17 @@ export default function FindYourHome() {
             ref={sectionRef}
             className="relative min-h-[600px] md:h-[600px] flex items-center justify-center overflow-hidden py-16 md:py-0"
         >
-            {/* Background Image with Overlay */}
+            {/* Background Video with Overlay */}
             <div className="absolute inset-0 z-0">
-                <Image
-                    src="/assets/property-beacon-ridge-exterior.jpg"
-                    alt="Dream Home"
-                    fill
-                    className="object-cover"
-                    quality={90}
-                />
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full h-full object-cover"
+                >
+                    <source src="/assets/videos/find-your-dream-home-bg.mp4" type="video/mp4" />
+                </video>
                 <div className="absolute inset-0 bg-gradient-to-b from-luxury-navy/80 via-luxury-navy/60 to-luxury-navy/80"></div>
             </div>
 

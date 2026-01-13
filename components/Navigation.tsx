@@ -38,8 +38,7 @@ export default function Navigation() {
                             alt="Marci Metzger Homes"
                             width={120}
                             height={50}
-                            className={`h-12 w-auto transition-all duration-300 ${isScrolled ? "invert brightness-200 contrast-125" : ""
-                                }`}
+                            className="h-12 w-auto invert brightness-200 contrast-125 transition-all duration-300"
                             priority
                         />
                     </div>
