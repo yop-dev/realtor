@@ -34,6 +34,9 @@ export const metadata: Metadata = {
         description: "Nearly 3 decades of real estate excellence in Southern Nevada",
         type: "website",
     },
+    icons: {
+        icon: "/assets/logo.png",
+    },
 };
 
 export default function RootLayout({
